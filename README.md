@@ -10,9 +10,23 @@ This repository contains static files for MouseLight's AWS Open Data. These fold
 
 ## Bucket structure
 
+Files are organized by type and date:
+
 * Root
     * images
         * `<date>`
+            * default.0.tif - a TIFF format file containing ...
+            * default.1.tif - a TIFF format file containing ...
+            * ktx
+                * `<number, 1-8>`
+                    * `<number, 1-8>`
+                    * block_8_xy_`<number, 1-8>`.ktx
+                         .
+                         .
+                         .
+                * block_8_xy_.ktx
+            * tilebase.cache.yml - a YML format file containing ...
+            * transform.txt - a text file containing ...
     * registration
         * `<date>`
     * segmentation
@@ -22,22 +36,3 @@ This repository contains static files for MouseLight's AWS Open Data. These fold
             * `<date>`
         * tracing_complete
             * `<date>`
-
-## Bucket Structure
-
-Files are organized by type and date:
-
-* Root
-    * `<release name>`
-        * _JSON metadata file_ - metadata about the release including the associated publication(s)
-        * `<fly line publishing name>`
-            * _JSON metadata file_ - metadata about the images, including curated anatomical annotations
-            * _LSM files (LSM)_ - microscope imagery in Zeiss LSM format
-            * _unaligned image stack files (H5J)_ - 3d imagery, distortion corrected, merged, and stitched
-            * _aligned image stack files (H5J)_ - 3d imagery registered to a canonical template
-            * _MIP files (PNG)_ - maximum intensity projections for rapid viewing
-            * _movie files (MP4)_ - small movies for rapid viewing of Z slices
-
-FlyLight file names contain metadata as follows:
-```
-[Publis
