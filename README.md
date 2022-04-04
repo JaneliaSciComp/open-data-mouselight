@@ -10,22 +10,22 @@ This repository contains static files for MouseLight's AWS Open Data. These fold
 
 ## Bucket structure
 
-    * Root
-        * images
+* Root
+    * images
+        * `<date>`
+    * registration
+        * `<date>`
+    * segmentation
+        * `<date>`
+    * tracings
+        * Finished_Neurons
             * `<date>`
-        * registration
+        * tracing_complete
             * `<date>`
-        * segmentation
-            * `<date>`
-        * tracings
-            * Finished_Neurons
-                * `<date>`
-            * tracing_complete
-                * `<date>`
 
 ## Bucket Structure
 
-Files are organized by release, each of which is linked to a scientific publication. Within a release, there are multiple fly lines, and each line can be multiple published samples (i.e. specimens). 
+Files are organized by type and date:
 
 * Root
     * `<release name>`
