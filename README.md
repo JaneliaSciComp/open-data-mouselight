@@ -7,3 +7,18 @@ This repository contains static files for MouseLight's AWS Open Data. These fold
 ## Implementation notes
 
 * The Markdown used in this repo contains footnotes, which are [not supported by Github](https://github.com/github/markup/issues/498), so they will not render correctly in the Github preview. The actual publication target for these README's is [Quilt](https://open.quiltdata.com/b/janelia-mouselight-imagery) which does support footnotes. 
+
+## Bucket structure
+
+    * Root
+        * images
+            * `<date>`
+        * registration
+            * `<date>`
+        * segmentation
+            * `<date>`
+        * tracings
+            * Finished_Neurons
+                * `<date>`
+            * tracing_complete
+                * `<date>`
