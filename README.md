@@ -53,8 +53,8 @@ Files are organized by type and date:
             * `<date>`
                 * G-`<number>`
                     * base.swc - SWC format file
-                    * consensus.swc - SWC format file
-                    * dendrite.swc - SWC format file
+                    * consensus.swc - SWC format file of axon
+                    * dendrite.swc - SWC format file of dendrite
                     * soma.txt	txt - text format file
                     * somaLoc.png	png - PNG format file
                     * somaOnt.png	png - PNG format file
