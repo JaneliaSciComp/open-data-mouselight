@@ -55,9 +55,9 @@ Files are organized by type and date:
                     * base.swc - SWC format file
                     * consensus.swc - SWC format file of axon
                     * dendrite.swc - SWC format file of dendrite
-                    * soma.txt	txt - text format file
-                    * somaLoc.png	png - PNG format file
-                    * somaOnt.png	png - PNG format file
+                    * soma.txt - text format file containing soma location
+                    * somaLoc.png - PNG format file
+                    * somaOnt.png - PNG format file
                     * Thumbs.db
                     * uni1.swc - SWC format file
                     * uni2.swc - SWC format file
