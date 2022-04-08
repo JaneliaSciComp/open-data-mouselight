@@ -36,28 +36,28 @@ Files are organized by type and date:
     * segmentation
         * `<date>` - SWC format neuron fragments generated during machine learning - structures vary
     * tracings
-        * Finished_Neurons
+        * Finished_Neurons - internal (transient) version of tracings
             * `<date>`
-                * G-`<number>`
-                * `<date>`_G-`<number>`_AZ.swc - SWC format file
-                * `<date>`_G-`<number>`_CA.swc - SWC format file
-                * `<date>`_G-`<number>`_dendrites.swc - SWC format file
+                * `<fluorophore color>`-`<number>`
+                * `<date>`_`<fluorophore color>`-`<number>`_`<annotator initials>`.swc - SWC format file
+                * `<date>`_`<fluorophore color>`-`<number>`_`<annotator initials>`.swc - SWC format file
+                * `<date>`_`<fluorophore color>`-`<number>`_dendrites.swc - SWC format file
                 * consensus
-                    * `<date>`_G-`<number>`_base.swc - SWC format file
-                    * `<date>`_G-`<number>`_consensus.swc - SWC format file
-                    * AZ_uni.swc - SWC format file
+                    * `<date>`_`<fluorophore color>`-`<number>`_base.swc - SWC format file
+                    * `<date>`_`<fluorophore color>`-`<number>`_consensus.swc - SWC format file
+                    * `<annotator initials>`_uni.swc - SWC format file
                     * Backup
-                        * `<date>`_G-`<number>`_consensus.swc - SWC format file
-                    * CA_uni.swc - SWC format file
-        * tracing_complete
+                        * `<date>`_`<fluorophore color>`-`<number>`_consensus.swc - SWC format file
+                    * `<annotator initials>`_uni.swc - SWC format file - individual annotator tracing
+        * tracing_complete - this prefix contains files shown on Workstation
             * `<date>`
-                * G-`<number>`
-                    * base.swc - SWC format file
+                * `<fluorophore color>`-`<number>`
+                    * base.swc - SWC format file - annotator consensus
                     * consensus.swc - SWC format file of axon
                     * dendrite.swc - SWC format file of dendrite
                     * soma.txt - text format file containing soma location
                     * somaLoc.png - PNG format file
                     * somaOnt.png - PNG format file
                     * Thumbs.db
-                    * uni1.swc - SWC format file
-                    * uni2.swc - SWC format file
+                    * uni1.swc - SWC format file - individual annotator tracing not in base
+                    * uni2.swc - SWC format file - individual annotator tracing not in base
