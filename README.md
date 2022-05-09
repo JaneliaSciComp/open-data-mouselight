@@ -27,12 +27,12 @@ Files are organized by type and date:
     * registration
         * `<date>`
             * `<date>`.horta.yml - YML format file ...
-            * `<date>`.nrrd - NRRD format file ...
-            * `<date>`.yml - YML format file ...
+            * `<date>`.nrrd - NRRD format file - a downsampled (monolitic) version of the imaged volume used for registration. The highest resolution (level) is matched to the 10um (isotropic) voxel size of the CCF.
+            * `<date>`.yml - YML format file - file containing the information paths of original TIFF files, control points, barycentric transforms, etc._ required to stitch the individual tiles into a coherent volume. It is used by the render to generate the TIFF octree (Horta2D). If the workstation ever needs to access the paths of the original (raw) imagery, it does so by querying this file.
             * HortaObj
-                * `<brain region>`_`<brain area ID>`.obj - multiple OBJ files (one per brain region) containing mesh
-            * Transform.`<date>`.h5 - - H5J format file
-            * Transformed_`<date>`.nrrd - NRRD format file ...
+                * `<brain region>`_`<brain area ID>`.obj - multiple OBJ files (one per brain region) containing meshes. These are the CCF neuropil meshes "back-registered" into sample space (i.e, imaged samples).
+            * Transform.`<date>`.h5 - - H5J format file. Contains the displacement fields required to transform (register) the sample into CCF space.
+            * Transformed_`<date>`.nrrd - NRRD format file - this is the registered result: i.e, the transformed nrrd registered into the Allen CCF.
     * segmentation
         * `<date>` - SWC format neuron fragments generated during machine learning - structures vary
     * tracings
