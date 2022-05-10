@@ -26,7 +26,7 @@ Files are organized by type and date:
             * transform.txt - a text file containing origin, scaling, and number or levels in octree
     * registration
         * `<date>`
-            * `<date>`.horta.yml - YML format file ...
+            * `<date>`.horta.yml - YML format file containing spatial index
             * `<date>`.nrrd - NRRD format file - a downsampled (monolitic) version of the imaged volume used for registration. The highest resolution (level) is matched to the 10um (isotropic) voxel size of the CCF.
             * `<date>`.yml - YML format file - file containing the information paths of original TIFF files, control points, barycentric transforms, etc._ required to stitch the individual tiles into a coherent volume. It is used by the render to generate the TIFF octree (Horta2D). If the workstation ever needs to access the paths of the original (raw) imagery, it does so by querying this file.
             * HortaObj
